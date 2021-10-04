@@ -1,12 +1,12 @@
 ---
 title: "[BugHunting #1] - Reflected XSS Attacks"
 date: 2021-05-29
-thumb: "dict-xss.png"
+thumb: "../assets/img/dict-xss.png"
 tags: 
  - bug hunting
 ---
 
-Halo, nama saya Virdio, di postingan kali ini saya akan menjelaskan bug yang saya temukan dalam website Kamus dari salah satu Universitas Luar Negeri yg cukup terkenal (maaf gk bisa dikasih tau, soalnya belum dapat ijin wkkwkk). Oh ya btw ini adalah kegiatan bug hunting pertama saya, dan pastinya juga write-up pertama saya, jadi mohon maaf bila ada kesalahan kata maupun kalimat di postingan blog saya ini :D
+Halo, nama saya Virdio, di postingan kali ini saya akan menjelaskan bug yang saya temukan dalam website kamus dari salah satu Universitas Luar Negeri yg cukup terkenal (maaf gk bisa dikasih tau, soalnya belum dapat ijin wkkwkk). Oh ya btw ini adalah kegiatan bug hunting pertama saya, dan pastinya juga write-up pertama saya, jadi mohon maaf bila ada kesalahan kata maupun kalimat di postingan blog saya ini :D
 
 # Intro
 Pada tanggal **20 April 2021**, saya menemukan website kamus bahasa inggris yang lumayan akurat untuk menerjemahkan sebuah *idiom* untuk tugas saya. Saya iseng untuk memasukkan karakter *double quote* ( " ) ke dalam search bar, dan tiba tiba double quote tersebut berubah menjadi teks "null"
@@ -48,16 +48,14 @@ Saya hampir buntu disini, tapi saya ingat, saya bisa memasukkan HTML code kedala
 ![error](../assets/img/payload_dict.jpg)
 
 # Result
-Hanya ilustrasi :D
+Hanya ilustrasi
 
 ![xss](../assets/img/alert_dict.jpg)
 
 # Timeline
 
- - 23 April 2021 : Report Bug ke CSIRT Universitas tersebut 
+ - 23 April 2021 : Report Bug ke CSIRT Universitas 
  - 27 April 2021 : Belum mendapatkan balasan, tetapi Bug sudah diperbaiki
- - 28 April 2021 : Minta ijin untuk menulis writeup di blog
- - Sampai sekarang : Belum dibalas :'D
 
 
 
