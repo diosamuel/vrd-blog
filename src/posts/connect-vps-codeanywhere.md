@@ -6,7 +6,7 @@ tags:
  - tutorial
  - linux
  - vps
- - catatan
+ - note
 ---
 
 # Lewat Putty

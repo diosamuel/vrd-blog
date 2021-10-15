@@ -1,12 +1,10 @@
 ---
-title: "[BugHunting #1] - Reflected XSS Attacks"
+title: "BugHunting - Reflected XSS Attacks"
 date: 2021-05-29
-thumb: "../assets/img/dict-xss.png"
+thumb: "xss-logo.jpg"
 tags: 
- - bug hunting
+ - bughunting
 ---
-
-Halo, nama saya Virdio, di postingan kali ini saya akan menjelaskan bug yang saya temukan dalam website kamus dari salah satu Universitas Luar Negeri yg cukup terkenal (maaf gk bisa dikasih tau, soalnya belum dapat ijin wkkwkk). Oh ya btw ini adalah kegiatan bug hunting pertama saya, dan pastinya juga write-up pertama saya, jadi mohon maaf bila ada kesalahan kata maupun kalimat di postingan blog saya ini :D
 
 # Intro
 Pada tanggal **20 April 2021**, saya menemukan website kamus bahasa inggris yang lumayan akurat untuk menerjemahkan sebuah *idiom* untuk tugas saya. Saya iseng untuk memasukkan karakter *double quote* ( " ) ke dalam search bar, dan tiba tiba double quote tersebut berubah menjadi teks "null"
@@ -24,7 +22,6 @@ Yaa.. karena object **lookupWord** berisi *double quote* dan tidak difilter menj
 
 # Mulai Inject
 Nah karena *double quote* tidak difilter, maka kita bisa sangat mudah memasukkan (atau meng-inject) kode html/js kedalamnya
-
 
 Coba perhatiin deh, apa yang terjadi kalau kita ketik **"}** di url (lihat kode dibawah sebagai ilustrasi)
 
