@@ -1,7 +1,7 @@
 ---
 title: "BugHunting - Reflected XSS Attacks"
 date: 2021-05-29
-thumb: "xss-logo.jpg"
+thumb: "reflected-xss-dictionary.jpg"
 tags: 
  - bughunting
 ---

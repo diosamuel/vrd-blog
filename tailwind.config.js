@@ -15,6 +15,12 @@ module.exports = {
       lg: '1024px',
       xl: '1280px'
     },
+    borderColor: (theme)=>({
+        ...theme('colors')
+    }),
+    backgroundColor: (theme)=>({
+        ...theme('colors')
+    }),
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
