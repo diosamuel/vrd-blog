@@ -1,6 +1,6 @@
 module.exports = {
   title: 'diosamuel',
-  description: 'Tempat berkeluh kesah',
+  description: 'Menulis',
   keywords: ['eleventy', 'template', 'simple', 'clean', 'blog'],
   // your site url without trailing slash
   url: 'https://diosamuel.netlify.app',

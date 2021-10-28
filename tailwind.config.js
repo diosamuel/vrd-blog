@@ -45,11 +45,25 @@ module.exports = {
         DEFAULT: {
           css: {
             'h1': {
-              fontWeight: '700'
+              fontWeight: '700',
+              color: theme('colors.white')
+            },
+            'h2': {
+              fontWeight: '700',
+              color: theme('colors.white')
+            },
+            'h3': {
+              fontWeight: '700',
+              color: theme('colors.white')
+            },
+            'strong':{
+              color: theme('colors.white')
             },
             'blockquote': {
+              padding:'10px',
+              backgroundColor:'#0d1233',
               fontWeight: 'normal',
-              color: theme('colors.gray.700')
+              color: "snow"
             },  
             'blockquote p:first-of-type::before': {
               content: ''

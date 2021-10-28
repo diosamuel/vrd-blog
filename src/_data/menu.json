@@ -4,12 +4,12 @@
         "url": "/about"
     },
     {
-        "label": "Tag",
+        "label": "Tags",
         "url": "/tags"
     },
     {
         "label": "GitHub",
-        "url": "https://github.com/diosamuel",
+        "url": "https://github.com/diosamuel/vrd-blog",
         "newTab": true
     }
 ]

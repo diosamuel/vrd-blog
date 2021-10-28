@@ -9,7 +9,7 @@ class Transkripsi extends Nukleus{
 		this.guanin = "G"
 		this.sitosin = "C"
 		this.timin = "T"
-		this.kode_kodon = "AUG"
+		this.startKodon = "AUG"
 
 		//DNA : mRNA
 		global.basa = {
@@ -54,7 +54,7 @@ class Transkripsi extends Nukleus{
 	}
 	terminasi(){
 		console.log('====TERMINASI====')
-		if(this.kodon(global.mRNA) == this.kode_kodon){
+		if(this.kodon(global.mRNA) == this.startKodon){
 			this.RNAPolimerase().menuju('sitoplasma')
 		}
 	}

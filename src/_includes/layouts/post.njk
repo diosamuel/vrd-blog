@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<article class="max-w-5xl mx-auto">
+<article class="max-w-5xl mx-auto text-white">
     <header class="mb-14">
-        <h1 class="text-3xl text-center font-bold leading-normal text-gray-900 mt-0 mb-3" style="font-family: 'Lora', serif;">{{ title }}</h1>
-        <div class="text-center text-black">Published on {{ page.date | readableDate }}</div>
+        <div class="max-w-md mx-auto">
+            <h1 class="text-3xl text-center font-bold leading-normal text-white-900 mt-0 mb-3 " style="font-family: 'Lora', serif;">{{ title }}</h1>
+        </div>
+        <div class="text-center text-gray-100">Published on {{ page.date | readableDate }}</div>
         {% if tags %}
         <div class="mt-3 text-center">
             {% for tag in tags %}
-            <a href="{{ '/tags/' | url }}{{ tag }}" class="inline-block rounded-full px-3 py-1 text-sm font-medium m-0.5 border-2 hover:border-blue-500 border-blue-200 text-gray-700 hover:text-gray-900">#{{ tag }}</a>
+            <a href="{{ '/tags/' | url }}{{ tag }}" class="inline-block rounded-full px-3 py-1 text-sm font-medium m-0.5 border-2 hover:border-blue-500 border-blue-200 text-white-700 hover:text-white-900">#{{ tag }}</a>
             {% endfor %}
         </div>
         {% endif %}
@@ -19,7 +21,7 @@ layout: default
         </div>
         {% endif %}
     </header>
-    <div id="content" class="prose text-gray-800 max-w-none">
+    <div id="content" class="prose text-white max-w-none">
         {{ content | safe }}
     </div>
     {% if site.disqusShortname %}
@@ -27,7 +29,7 @@ layout: default
         {% if process.environment === "production" %}
         {% include "partials/disqus.njk" %}
         {% else %}
-        <div class="italic text-gray-700">Disqus comments only available for production</div>
+        <div class="italic text-white-700">Disqus comments only available for production</div>
         {% endif %}
     </div>
     {% endif %}
