@@ -16,8 +16,13 @@ layout: default
         </div>
         {% endif %}
         {% if thumb %}
-        <div class="mt-10 -mx-7 md:mx-0">
+        <div class="mt-10 -mx-7 md:mx-0 text-center">
             <img class="w-full max-w-2xl mx-auto" src="{{ thumb | url }}" width="960" height="500" alt="This post thumbnail">
+            {% if license %}
+                <div class="mt-5">
+                    <a class="opacity-80" href="{{ license_url }}">{{ license }}</a>
+                </div>
+            {% endif %}
         </div>
         {% endif %}
     </header>

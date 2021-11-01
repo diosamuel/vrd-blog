@@ -2,6 +2,8 @@
 title: "Cara Connect VPS Codeanywhere"
 date: 2021-10-04
 thumb: "http://codeanywhere.com/img/backgrounds/codeanywhere-bg.jpg"
+license : "codeanywhere.com"
+license_url : "https://codeanywhere.com"
 tags: 
  - tutorial
  - linux
