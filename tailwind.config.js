@@ -46,27 +46,27 @@ module.exports = {
           css: {
             'h1': {
               fontWeight: '700',
-              color: theme('colors.white')
+              color: theme('colors.black')
             },
             'h2': {
               fontWeight: '700',
-              color: theme('colors.white')
+              color: theme('colors.black')
             },
             'h3': {
               fontWeight: '700',
-              color: theme('colors.white')
+              color: theme('colors.black')
             },
             'a':{
               color: 'gray'
             },
             'strong':{
-              color: theme('colors.white')
+              color: theme('colors.black')
             },
             'blockquote': {
               padding:'10px',
-              backgroundColor:'#0d1233',
+              backgroundColor:'#fafafa',
               fontWeight: 'normal',
-              color: "snow"
+              color: "#333333"
             },  
             'blockquote p:first-of-type::before': {
               content: ''

@@ -14,9 +14,9 @@ title: About Me
             <a href="{{ author.homepage | url }}" target="_blank" rel="noopener">{{ author.name }}</a>
         </h1>
         {% if author.email %}
-        <div class="text-gray-600">
+        {# <div class="text-gray-600">
             <a href="mailto:{{ author.email }}">{{ author.email }}</a>
-        </div>
+        </div> #}
         {% endif %}
         {% if author.phone %}
         <div class="text-gray-600">

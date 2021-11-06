@@ -1,7 +1,7 @@
 ---
 title: "Cara Connect VPS Codeanywhere"
 date: 2021-10-04
-thumb: "http://codeanywhere.com/img/backgrounds/codeanywhere-bg.jpg"
+thumb: "https://kb.qwords.com/wp-content/uploads/2016/12/qwords_putty_2.png"
 license : "codeanywhere.com"
 license_url : "https://codeanywhere.com"
 tags: 

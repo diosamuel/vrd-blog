@@ -4,10 +4,11 @@ title: Tags
 permalink: "tags/index.html"
 ---
 
-<h1 class="text-3xl leading-normal font-bold mt-0 mb-7 text-white text-center">{{ title }}</h1>
+<h1 class="text-3xl leading-normal font-bold mt-0 mb-7 text-black text-center">{{ title }}</h1>
 <div class="flex justify-center flex-wrap">
     {% for name, length in collections.tagList %}
-    <a href="{{ '/tags/' | url }}{{ name }}" class="inline-block mx-1 mb-3 px-4 py-2 border-2 hover:border-blue-500 border-blue-200 text-white-700 hover:text-white-900 font-medium rounded-full">
+    {# <a href="{{ '/tags/' | url }}{{ name }}" class="inline-block mx-1 mb-3 px-4 py-2 border-2 hover:border-blue-500 border-blue-200 text-white-700 hover:text-white-900 font-medium rounded-full"> #}
+    <a href="{{ '/tags/' | url }}{{ name }}" class="px-4 mb-3 mx-1 py-1 border-black border-b">
         #{{ name.toLowerCase() }}
         {# <span class="px-2 py-1 ml-1 text-xs font-semibold bg-blue-300 text-blue-800 rounded-full">{{ length }}</span> #}
     </a>
